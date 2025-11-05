@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.5s;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'a';
+    src: url('../fonts/Airfool.otf');
+}
+
+@font-face {
+    font-family: 'r';
+    src: url('../fonts/MontserratAlternates-Regular.ttf');
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1380px;
+}
+
+header {
+    padding: 40px 0 0 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #FD2E9F;
+    font-family: 'r';
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #950554;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color: #FEDCEA;
+}
+
+.bannerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.bannerTxt {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.bannerTxt p {
+    font-family: 'r';
+    font-size: 25px;
+    color: #f989c7;
+}
+
+h1 {
+    font-family: 'a';
+    font-size: 80px;
+    color: #FD2E9F;
+}
+
+.bannerImg {
+    width: 600px;
+    height: 450px;
+}
+
+button {
+    border-radius: 50px;
+    padding: 10px 32px;
+    border: 2px solid #FD2E9F;
+    width: 300px;
+    background: none;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* about */
+.about {
+    padding: 40px 0;
+    background-color: #d2f5d5;
+    position: relative;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 620px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.aboutContent p {
+    font-size: 18px;
+    color: #383838;
+    font-family: 'r';
+    line-height: 1.5;
+}
+
+.aboutImg1 {
+    width: 400px;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+.aboutImg2 {
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+
+.aboutImg1 img {
+    width: 400px;
+}
+
+.aboutImg2 img {
+    width: 400px;
+}
+
+/* preim */
+.preim {
+    width: 100vh;
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.preimImg {
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preimImg img {
+    width: 560px;
+}
+
+h2 {
+    font-family: 'a';
+    font-size: 50px;
+    color: #FD2E9F;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'a';
+    font-size: 30px;
+    color: #FD2E9F;
+}
+
+.preim p {
+    font-size: 16px;
+    color: black;
+    font-family: 'r';
+    width: 290px;
+}
+
+.preim1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 495px;
+    position: absolute;
+    left: -300px;
+    top: 580px;
+}
+
+.preim2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 450px;
+    position: absolute;
+    left: -300px;
+    top: 280px;
+}
+
+.preim3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 455px;
+    position: absolute;
+    right: -300px;
+    top: 280px;
+}
+
+.preim4 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 495px;
+    position: absolute;
+    right: -300px;
+    top: 580px;
+}
+
+.preim4 p,
+.preim4 h4,
+.preim3 p,
+.preim3 h4 {
+    text-align: right;
+    margin-left: auto;
+}
+
+.preim1 p,
+.preim1 h4,
+.preim2 p,
+.preim2 h4 {
+    text-align: left;
+    margin-right: auto;
+}
+
+/* raznovidnosty */
+.raznovidnosty {
+    padding: 40px 0;
+    background-color: #f8f4bd;
+}
+
+.raznovidnostyContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.raznovidnostyContentOne {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.raznovidnostyContentTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rctImg {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.rctImg:hover {
+    border: 2px solid #f989c7;
+    box-shadow: 0 5px 15px #f989c7;
+}
+
+.rctImg img {
+    width: 200px;
+    height: 200px;
+}
+
+.raznovidnostyImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow:
+        0 5px 30px rgba(0, 0, 0, 0.302);
+}
+
+.raznovidnostyImg img {
+    width: 500px;
+    height: 400px;
+}
+
+.raznovidnostyTxt {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 460px;
+}
+
+.raznovidnostyTxt h3 {
+    font-family: 'a';
+    font-size: 40px;
+    color: #4f1111;
+}
+
+.raznovidnostyTxt p {
+    font-family: 'r';
+    font-size: 18px;
+    color: #473030;
+}
+
+/* reviews */
+.reviews {
+    padding: 40px 0;
+    background-color: #f4bdf8;
+}
+
+.reviewsSlider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reviewsCards {
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.reviewCard {
+    flex: 0 0 100%;
+    padding: 30px;
+    display: none;
+}
+
+.reviewCard.active {
+    display: block;
+}
+
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.reviewerInfo h4 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+.reviewStars {
+    font-family: 'r';
+    color: #ffd700;
+    font-size: 16px;
+}
+
+.reviewText {
+    font-family: 'r';
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.reviewDate {
+    font-family: 'r';
+    font-size: 16px;
+    color: #454545;
+    line-height: 1.5;
+}
+
+.sliderControls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+}
+
+.sliderBtn {
+    color: #FD2E9F;
+    font-size: 16px;
+}
+
+/* footer */
+footer {
+    padding: 40px 0;
+    background-color: #FEDCEA;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-family: 'r';
+    font-size: 16px;
+    color: #f989c7;
+}
